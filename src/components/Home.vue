@@ -2,10 +2,11 @@
   <div>
     <nav-bar></nav-bar>
 
-    <div class="wrapper">
+    <div class="wrapper" >
 
-      <el-row :gutter="20">
-        <el-col :span="8" v-for="i in 20">
+      <el-row :gutter="20" >
+        
+        <el-col :span="8" v-for="i in 10" >
           <vehicle-box></vehicle-box>
         </el-col>
       </el-row>
@@ -24,6 +25,7 @@
   name: 'home',
   data () {
     return {
+      loading:true,
       activeIndex:"/",
       trucks:[
 
@@ -42,9 +44,9 @@
 
 .wrapper {
   width:1100px;
-  margin: 10px auto;
+  margin: 0px auto;
   padding:50px;
-  background: #eee;
-  border-radius: 10px;
+  background: #1F2D3D;
+  border-radius: 2px;
 }
 </style>
