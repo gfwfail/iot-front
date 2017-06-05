@@ -5,7 +5,7 @@
     <div class="wrapper" >
 
       <el-row :gutter="20" >
-        
+
         <el-col :span="8" v-for="i in 10" >
           <vehicle-box></vehicle-box>
         </el-col>
@@ -40,13 +40,14 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 
 .wrapper {
   width:1100px;
   margin: 0px auto;
   padding:50px;
-  background: #1F2D3D;
+  background: rgba(0,0,0,0.2);
   border-radius: 2px;
+
 }
 </style>
